@@ -450,6 +450,9 @@ header.scrolled {
     border-radius: 8px;
     overflow: hidden;
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .portfolio-item:hover {
@@ -473,6 +476,9 @@ header.scrolled {
 
 .portfolio-info {
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
 }
 
 .portfolio-info h3 {
@@ -485,6 +491,10 @@ header.scrolled {
     color: var(--text-secondary);
     font-size: 0.9rem;
     margin-bottom: 20px;
+}
+
+.portfolio-info > div:last-child {
+    margin-top: auto; 
 }
 
 /* Contacto */
